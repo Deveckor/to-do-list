@@ -1,38 +1,52 @@
 .App {
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.tach{
+  text-decoration: line-through;
+}
+.text{
+  text-decoration: none;
+}
+
+.card{
   text-align: center;
+  border-radius: 50px;
+  padding: 15px;
+  min-height: 250px;
+  height: fit-content;
+  width: 50vw;
+  background-color: rgba(123, 123, 123, 0.493);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.span{
+  font-size: 12px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.listToDo{
+  margin:20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  
+}
+.formList{
+  display: flex;
+  
+  width: 100%;
+ 
+}
+.list{
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+  
+}
+.addTask{
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 25px;
 }
